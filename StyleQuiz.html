@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stitch - Style Quiz</title>
+
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <img src="../static/Logo.png" alt="Smart Stitch Logo">
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="AIStylist.html">AI Stylist</a>
+        <a href="StyleQuiz.html">Style Quiz</a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <a href="profile.html">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+    </div>
+
+</header>
+
+<!-- ================= SMART STITCH STYLE QUIZ ================= -->
+<section class="quiz-container">
+
+    <div class="quiz-card">
+
+        <h1>Discover Your Personal Style</h1>
+
+        <p class="quiz-subtitle">
+            Answer these questions so Smart Stitch AI can build your personalized style profile.
+        </p>
+
+        <form id="quizForm">
+
+            <!-- Question 1 -->
+            <div class="question">
+
+                <h2>1. How would your friends describe your style?</h2>
+
+                <label><input type="radio" name="style" value="Casual & Comfortable"> Casual & Comfortable</label>
+                <label><input type="radio" name="style" value="Trendy & Fashion Forward"> Trendy & Fashion Forward</label>
+                <label><input type="radio" name="style" value="Sporty"> Sporty</label>
+                <label><input type="radio" name="style" value="Classic & Timeless"> Classic & Timeless</label>
+                <label><input type="radio" name="style" value="I don't really know yet"> I don't really know yet</label>
+
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+
+                <h2>2. What matters most when buying clothes?</h2>
+
+                <label><input type="radio" name="priority" value="Price"> Price</label>
+                <label><input type="radio" name="priority" value="Quality"> Quality</label>
+                <label><input type="radio" name="priority" value="Brand Name"> Brand Name</label>
+                <label><input type="radio" name="priority" value="Style"> Style</label>
+
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+
+                <h2>3. How much do you usually spend on a hoodie?</h2>
+
+                <label><input type="radio" name="budget" value="25"> Under $25</label>
+                <label><input type="radio" name="budget" value="50"> $25 - $50</label>
+                <label><input type="radio" name="budget" value="80"> $50 - $80</label>
+                <label><input type="radio" name="budget" value="200"> Over $80</label>
+
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+
+                <h2>4. Which colors do you wear the most?</h2>
+
+                <label><input type="checkbox" name="color" value="black"> Black</label>
+                <label><input type="checkbox" name="color" value="white"> White</label>
+                <label><input type="checkbox" name="color" value="blue"> Blue</label>
+                <label><input type="checkbox" name="color" value="beige"> Earth Tones</label>
+                <label><input type="checkbox" name="color" value="bright"> Bright Colors</label>
+
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+
+                <h2>5. Which clothing brands do you wear most often?</h2>
+
+                <label><input type="checkbox" name="brand" value="Nike"> Nike</label>
+                <label><input type="checkbox" name="brand" value="Adidas"> Adidas</label>
+                <label><input type="checkbox" name="brand" value="Ralph Lauren"> Ralph Lauren</label>
+                <label><input type="checkbox" name="brand" value="H&M"> H&M</label>
+                <label><input type="checkbox" name="brand" value="Uniqlo"> Uniqlo</label>
+                <label><input type="checkbox" name="brand" value="Thrift Stores"> Thrift Stores</label>
+
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+
+                <h2>6. What kind of clothes do you usually wear?</h2>
+
+                <label><input type="radio" name="fit" value="Slim Fit"> Slim Fit</label>
+                <label><input type="radio" name="fit" value="Regular Fit"> Regular Fit</label>
+                <label><input type="radio" name="fit" value="Relaxed Fit"> Relaxed Fit</label>
+                <label><input type="radio" name="fit" value="Oversized"> Oversized</label>
+
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+
+                <h2>7. Where do you get fashion inspiration?</h2>
+
+                <label><input type="radio" name="inspiration" value="TikTok"> TikTok</label>
+                <label><input type="radio" name="inspiration" value="Instagram"> Instagram</label>
+                <label><input type="radio" name="inspiration" value="Pinterest"> Pinterest</label>
+                <label><input type="radio" name="inspiration" value="Friends"> Friends</label>
+                <label><input type="radio" name="inspiration" value="Celebrities"> Celebrities</label>
+
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+
+                <h2>8. Which aesthetic describes you best?</h2>
+
+                <label><input type="radio" name="aesthetic" value="Streetwear"> Streetwear</label>
+                <label><input type="radio" name="aesthetic" value="Old Money"> Old Money</label>
+                <label><input type="radio" name="aesthetic" value="Minimalist"> Minimalist</label>
+                <label><input type="radio" name="aesthetic" value="Vintage"> Vintage</label>
+                <label><input type="radio" name="aesthetic" value="Athletic"> Athletic</label>
+
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+
+                <h2>9. What is your biggest struggle when shopping?</h2>
+
+                <label><input type="radio" name="problem" value="Clothes are too expensive"> Clothes are too expensive</label>
+                <label><input type="radio" name="problem" value="I don't know what matches"> I don't know what matches</label>
+                <label><input type="radio" name="problem" value="There are too many choices"> There are too many choices</label>
+                <label><input type="radio" name="problem" value="I can't find quality clothes"> I can't find quality clothes</label>
+
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+
+                <h2>10. If you could improve your wardrobe, what would you want most?</h2>
+
+                <label><input type="radio" name="goal" value="Save Money"> Save Money</label>
+                <label><input type="radio" name="goal" value="Dress More Fashionably"> Dress More Fashionably</label>
+                <label><input type="radio" name="goal" value="Buy Better Quality Clothes"> Buy Better Quality Clothes</label>
+                <label><input type="radio" name="goal" value="Have an AI Personal Stylist"> Have an AI Personal Stylist</label>
+
+            </div>
+
+            <button type="submit" class="submit-btn">
+
+                Generate My AI Style Profile
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ================= RESULTS ================= -->
+<section class="results" id="resultsSection" style="display:none;">
+
+    <h2>Your Recommended Picks</h2>
+
+    <div class="results-grid" id="resultsGrid"></div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <p>© 2026 Smart Stitch. All Rights Reserved.</p>
+
+</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
