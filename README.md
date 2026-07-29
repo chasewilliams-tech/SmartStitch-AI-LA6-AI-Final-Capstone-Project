@@ -1,0 +1,1 @@
+# SmartStitch-AI-LA6-AI-Final-Capstone-Project
